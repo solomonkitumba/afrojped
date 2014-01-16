@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Afrojped_base feature.
+ */
+
+include_once 'afrojped_base.features.inc';
