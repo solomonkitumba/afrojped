@@ -100,6 +100,24 @@ function afrojped_base_context_default_contexts() {
           'region' => 'postscript_fourth',
           'weight' => '-10',
         ),
+        'views-services-block_4' => array(
+          'module' => 'views',
+          'delta' => 'services-block_4',
+          'region' => 'footer_first',
+          'weight' => '-10',
+        ),
+        'menu-menu-footer-menu' => array(
+          'module' => 'menu',
+          'delta' => 'menu-footer-menu',
+          'region' => 'footer_second',
+          'weight' => '-10',
+        ),
+        'views-founders-block' => array(
+          'module' => 'views',
+          'delta' => 'founders-block',
+          'region' => 'footer_main',
+          'weight' => '-10',
+        ),
       ),
     ),
   );
@@ -123,18 +141,7 @@ function afrojped_base_context_default_contexts() {
       ),
     ),
   );
-  $context->reactions = array(
-    'block' => array(
-      'blocks' => array(
-        'menu-menu-footer-menu' => array(
-          'module' => 'menu',
-          'delta' => 'menu-footer-menu',
-          'region' => 'footer_first',
-          'weight' => '-10',
-        ),
-      ),
-    ),
-  );
+  $context->reactions = array();
   $context->condition_mode = 1;
   $export['sitewide'] = $context;
 
